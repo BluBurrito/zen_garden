@@ -1,0 +1,146 @@
+html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+a {
+    color: rgb(69, 215, 106);
+}
+
+a:hover {
+    color: #338940;
+}
+
+#zen-intro {
+    background-color: rgb(85, 111, 134);
+}
+
+.wrapper {
+     display: flex;
+}
+
+header {
+    background-color: rgb(82, 149, 116);
+    color: white;
+    margin: 2%;
+    text-align: center;
+    font-size: xx-large;
+    padding: 5%;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 300px;
+    grid-template-areas: 
+    "header header sidebar" "summary summary sidebar" "preamble explanation sidebar" "participation benefits sidebar" "requirements requirements sidebar";
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.intro {
+    display: contents;
+}
+
+.main.supporting {
+    display: contents;
+}
+
+header[role="banner"] {
+    grid-area: header;
+}
+
+.summary {
+    grid-area: summary;
+}
+
+.preamble {
+    grid-area: preamble;
+}
+
+.explanation {
+    grid-area: explanation;
+}
+
+.participation {
+    grid-area: participation;
+}
+
+.benefits {
+    grid-area: benefits;
+}
+
+.requirements {
+    grid-area: requirements;
+}
+
+.sidebar {
+    grid-area: sidebar;
+      line-height: 1.3;
+     
+}
+
+.sidebar .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "selection selection" "archives resources";
+    gap: 75px;
+}
+
+.sidebar .design-selection {
+    grid-area: selection;
+
+    margin-top: 507px;
+}
+
+.sidebar .design-archives {
+    grid-area: archives;
+}
+
+.sidebar .zen-resources {
+    grid-area: resources;
+}
+
+.sidebar .design-selection, .sidebar .design-archives, .sidebar .zen-resources {
+    background: rgba(242, 245, 255, 0.9);
+    border: 5px solid #2a98dd;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 125%;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.preamble, .explanation,  .participation,  .benefits,  .requirements {
+    background: rgba(255, 255, 255, 0.9);
+    border: 7px solid #2a98dd;
+    padding: 25px;
+    box-sizing: border-box;
+    float: none;
+    width: auto;
+
+}
+
+footer{
+    background: rgba(222, 255, 233, 0.9)!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 20px;
+    margin-left: 75%;
+    width: 50%;
+    text-align: center;
+}
